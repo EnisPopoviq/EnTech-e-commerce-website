@@ -1,0 +1,166 @@
+  .navbar-nav .nav-link {
+    transition: all 0.3s ease;
+    color: #ffffff;
+    font-family: serif;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #dcd9d9; /* darker color */
+    transform: scale(1.05); /* slight expansion */
+    text-shadow: 0 0 2px rgb(54, 54, 54); /* optional nice effect */
+  }
+
+  .navbar {
+    height: 90px; /* Fixed height for navbar */
+    padding: 0;   /* Remove default vertical padding */
+  }
+
+  .nav-link .dropdown-item {
+
+    color: #dcd9d9;
+
+  }
+  
+  .dropdown-menu {
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    padding: 10px 0;               /* space inside the dropdown */
+    min-width: 250px;              /* wider dropdown menu */
+    
+}
+  
+  /* Dropdown Items */
+  .dropdown-item {
+    transition: all 0.3s ease;
+    padding: 15px 25px;            /* more vertical & horizontal space */
+    font-size: 1rem;               /* increase font size if needed */
+    border-radius: 6px;
+   
+  }
+  
+  /* Hover effect for items */
+  .dropdown-item:hover {
+    background-color: #f0f0f0;
+    transform: translateX(4px);
+    
+  }
+  
+  .hover-effect {
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    background: radial-gradient(
+      circle at var(--x, 50%) var(--y, 50%),
+      #000000,
+      #4f4e4e 40%,
+      #787676 70%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: background 0.2s ease;
+  }
+
+  
+
+  .text-paragraph {
+
+    font-family: serif;
+    font-size: 40px;
+    color: transparent;
+    background: radial-gradient(
+      circle at var(--x, 50%) var(--y, 50%),
+      #000000,
+      #323232 40%,
+      #5e5d5d 70%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+ 
+  }
+
+  .bg-image-section {
+    width: 110%;
+    height: 400px; /* Adjust the height as needed */
+    background-size: cover;
+    background-image: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: serif;
+    position: relative;
+    border-radius: 15px;
+    animation: backgroundChange 15s infinite ease-in-out; /* Adjust timing to your preference */
+  }
+
+  @media (min-width: 992px) {
+    .bg-image-section {
+      height: 800px;
+    }
+   
+  }
+  
+  /* Animation */
+  @keyframes backgroundChange {
+    0%, 20% {
+      background-image: url('img/undraw_web-devices_i15y.png'); /* First image */
+    }
+    20.1%, 40% {
+      background-image: url('img/undraw_building-websites_k2zp.png'); /* Second image */
+    }
+    40.1%, 60% {
+      background-image: url('img/undraw_personal-website_6cef.png'); /* Third image */
+    }
+    60.1%, 80% {
+      background-image: url('img/undraw_tabs_tlxz.png');
+    }
+    80.1%, 100% {
+      background-image: url('img/undraw_pair-programming_9jyg.png'); /* Fifth image */
+    }
+  }
+  
+  
+  .overlay-text {
+    padding: 100px 0; /* Increases top and bottom padding */
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&display=swap');
+
+.overlay-text h2 {
+  font-size: 3rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.overlay-text p {
+  font-size: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+}
+  
+  .responsive-paragraph {
+    font-size: 1.1rem; /* base size for mobile */
+  }
+  
+  @media (min-width: 768px) {
+    .responsive-paragraph {
+      font-size: 2.0rem; /* bigger size for tablets and desktops */
+    }
+  }
+  
+  .responsive-video {
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  /* For screens 768px and wider (desktop) */
+  @media (min-width: 768px) {
+    .responsive-video {
+      height: 550px; /* Adjust this value to make the video smaller on desktop */
+      width: 90%;
+      margin: 0 auto;
+      position: relative;
+      border-radius: 40px;
+      align-items: center;
+    }
+  }
+  
+
+  
